@@ -1,8 +1,11 @@
+# this program plays "twinkle twinkle little star"thru a tonal buzzer
+# for every 7 notes a normal buzzer will ring once
+
 from gpiozero import *
 from time import *
 
-tbz = TonalBuzzer(18) # tonal buzzer is attached to GPIO18
-bz = Buzzer(13)  # normal buzzer is attached to GPIO13
+tbz = TonalBuzzer(18) # the tonal buzzer is attached to GPIO18
+bz = Buzzer(13)  # the normal buzzer is attached to GPIO13
 
 twinkle_twinkle = [
     "C4", "C4", "G4", "G4", "A4", "A4", "G4",
